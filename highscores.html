@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="celebrity quiz">
+    <!--font awesome and google fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!--style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--title-->
+    <title>Celebrity Quiz</title>
+    <!--code to prevent favicon error-->
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <section id="page-contain">
+        <div id="box">
+        <h1>
+            <i class="fas fa-trophy"></i>
+            <br>
+            Highscores:
+        </h1>
+        <br>
+        <div id="leaderboard-list">
+        </div>
+        <button class="button" id="hide" aria-label="click to see highscore">Click to See</button>
+        <a href="index.html" class="button"><i class="fas fa-home home-icon"></i> Home</a>
+        <a href="quiz-page.html" class="button" id="playAgain">Play Again</a>
+        </div>
+    </section>
+    <noscript>
+        Unfortunately the browser you are using does not support JavaScript
+    </noscript>
+    <!--javascript-->
+    <script src="assets/scripts/quiz.js"></script>
+</body>
+</html>
