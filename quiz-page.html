@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="celebrity quiz">
+    <!--font awesome and google fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!--style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--title-->
+    <title>Celebrity Quiz</title>
+</head>
+
+<body>
+    <section class="center">
+        <h1>Guess The Celebrity</h1>
+    </section>
+    <section class="contain">
+            <div class="top-row">
+                <h2>Score:</h2>
+                <p id="score"></p>
+            </div>
+            <div class="top-row">
+                <h2>Points to Win:</h2>
+                <p id="pointsToWin"></p>
+            </div>
+            <div>
+                <h2 id="progress-title">Progress</h2>
+                <div id="progress">
+                    <p id="progressBar"></p>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div class="quiz-box" id="quizBox">
+                <p class="picture-item"><img id="pic1" src="assets/images/click1.png" alt="top quarter of celebrity image"></p>
+                <p class="picture-item"><img id="pic2" src="assets/images/click2.png" alt="second quarter from the top of celebrity image"></p>
+                <p class="picture-item"><img id="pic3" src="assets/images/click3.png" alt="second quarter from the bottom of celebrity image"></p>
+                <p class="picture-item"><img id="pic4" src="assets/images/click4.png" alt="bottom quarter of celebrity image"></p>
+            </div>
+
+            <div class="quiz-box" id="choices">
+                <p class="quiz-button" id="q1"></p>
+                <p class="quiz-button" id="q2"></p>
+                <p class="quiz-button" id="q3"></p>
+                <p class="quiz-button" id="q4"></p>
+            </div>
+            <div class="break"></div>
+        <p class="button" id="instructionsBox">Click an image section to reveal part of the celebrity. Guess the celeb with as few flips as you can to get the most points</p>
+            <div class="break"></div>
+        <p id="instructions">Click For Instructions</p>
+    </section>
+    <noscript>
+        Unfortunately the browser you are using does not support JavaScript
+    </noscript>
+    <!--javascript-->
+    <script src="assets/scripts/quiz.js"></script>
+</body>
+</html>
