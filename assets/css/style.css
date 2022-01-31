@@ -178,3 +178,22 @@ h1 {
     font-size: 4rem;
     padding-bottom: 0.5rem;
 }
+
+/* leaderboard */
+
+#leaderboard-list li {
+    list-style: none;
+    background-color: #FBF8BE;
+    color: #234E70;
+    font-weight: 900;
+    font-size: 3rem;
+    width: 250px;
+    border: #234E70;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.home-icon {
+    background: #0c1a25;
+    font-size: 2.5rem;
+}
