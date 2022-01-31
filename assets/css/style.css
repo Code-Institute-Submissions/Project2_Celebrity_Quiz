@@ -197,3 +197,95 @@ h1 {
     background: #0c1a25;
     font-size: 2.5rem;
 }
+
+@media screen and (max-width: 1280px) {
+    h1 {
+        margin-top: 4px;
+        font-size: 3rem;
+    }
+
+    .top-row {
+        padding-bottom: 0.3rem;
+    }
+
+    .button {
+        padding: 1.5rem;
+    }
+
+    .quiz-button {
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 2.5rem;
+        width: 350px;
+    }
+
+    .break {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .top-row {
+        padding: 0.5rem;
+    }
+
+    #progress, #progressBarm, #progress-title {
+        display: none;
+    }
+
+    .picture-item {
+        width: 390px;
+        margin-left: 20px;
+    }
+
+    .quiz-button {
+        padding: 1rem;
+        margin-left: 20px;
+    }
+
+    .quiz-end-text {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .quiz-button {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    .top-row {
+        margin-left: 35px;
+    }
+    
+    .picture-item {
+        margin-left: 0px;
+    }
+
+    .quiz-button {
+        margin-left: 50px;
+        width: 340px;
+    }  
+}
