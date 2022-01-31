@@ -72,3 +72,102 @@ h1 {
     display: none;
     font-size: 1.5rem;
 }
+
+/* quiz page */
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.center h1 {
+    padding-top: 1rem;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    flex-direction: row;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 10px;
+}
+
+.top-row {
+    margin-right: 3%;
+    padding: 3rem;
+}
+
+#progress {
+    width: 30rem;
+    height: 5rem;
+    border-radius: 70px;
+    border: 3px solid #FBF8BE;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background-color: #FBF8BE;
+}
+
+.quiz-box {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.picture-item {
+    overflow: hidden;
+    object-fit: contain;
+    font-size: 0;
+    cursor: pointer
+}
+
+.quiz-button {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 1.5rem;
+    padding: 2rem;
+    width: 400px;
+    background-color: #0c1a25;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quiz-button:hover {
+    box-shadow: 0px 5px 15px 5px rgba(12,26,37,0.54);
+    transition: transform 300ms;
+    transform: scale(1.03);
+}
+
+#instructions {
+    font-size: 2.5rem;
+}
+
+#score, #pointsToWin {
+    font-size: 3rem;
+}
+
+#sound {
+    width: 30px;
+    background-color: #0c1a25;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa-volume-mute, .fa-volume-up {
+    background-color: #0c1a25;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
