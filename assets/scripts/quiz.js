@@ -416,6 +416,24 @@ function preventDoubleClick(event) {
     }
 }
 
+
+
+
+
+
+
+
+
+
+// reduces points to win with each image flipped. 
+
+function reducePointsToWin() {
+    let setPointsToWin = document.getElementById("pointsToWin");
+    let pointsToWin = document.getElementById("pointsToWin").innerHTML;
+    pointsToWin = Math.floor(pointsToWin/2);
+    setPointsToWin.innerHTML = pointsToWin;
+}
+
 // flips the card. If more than one section has been revealed points to win is halved by calling clickCheck() which calls reducePointsToWin()
 
 let flipCard = (event) => {
