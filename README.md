@@ -345,4 +345,37 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
         highScores.sort(function(a, b){return a - b}).reverse()
 
     [return to contents](<#contents>)
+
+    # Deployment
+
+## Steps for Deployment
+
+The following steps can be followed to deploy this project on Github pages:
+ 
+  1. In the GitHub repository, navigate to the Settings tab 
+  2. From the source section drop-down menu, select the main Branch
+  3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+![how to deploy repository](assets/readme_images/deployment.PNG)
+
+[return to contents](<#contents>)
+
+## Steps to Clone the Repository
+
+To clone the repository in order to be able to make changes to the project without effecting the original repository please follow the steps below: 
+
+1. Open Github and locate the repository you wish to copy
+2. Above the list of files click "code"
+3. To clone the repository using HTTPS, under "clone with HTTPS", click the copy icon. 
+[return to contents](<#contents>)
+
+![How to clone](assets/readme_images/clone.png)
+
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory
+6. Type git clone and then paste the URL you copied earlier
+7. Press enter to create your local clone
+
+[return to contents](<#contents>)
+
        
