@@ -34,3 +34,14 @@ function saveUsername() {
     window.location.href = "quiz-page.html";    
     }
 }
+
+// allow sound to be played or muted by clicking button
+
+function sound() {
+    let sound = document.getElementById("sound");
+    if (sound.innerHTML === '<i class="fas fa-volume-mute"></i>') {
+        sound.innerHTML = '<i class="fas fa-volume-up"></i>';
+    } else {
+        sound.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    }
+}
