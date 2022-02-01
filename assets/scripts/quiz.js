@@ -563,3 +563,20 @@ function highScores() {
     //store array on local storage
     localStorage.setItem('highScores', JSON.stringify(highScores));
 }
+
+// creates innerHTML of leaderboard from highScores array
+
+function createHighScores() {
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    if (highScores.length >= 1) {
+        let li = '<ol>';
+        highScores.forEach(function(listMaker) {
+            li += '<li>'+listMaker+'</li>';
+        });
+
+        li += '</ol>';
+
+        document.getElementById("highscores-list").innerHTML = li;
+    }
+    document.getElementById("hide").setAttribute("style", "display: none");
+}
