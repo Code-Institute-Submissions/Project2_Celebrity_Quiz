@@ -17,19 +17,18 @@
     <!--code to prevent favicon error-->
     <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body>
-    <body>
-        <section id="page-contain">
-            <div id="box">
-                <h1>Welcome to the Celebrity Quiz</h1>
-                <label for="username" id="label">Enter Username:</label>
-                <input type="text" id="username">
-                <button class="button" aria-label="click to play quiz">Play Quiz</button>
-                <a href="highscores.html" class="button" id="playAgain">Highscores</a>
-                <p class="button" id="instructionsBox">Click an image section to reveal part of the celebrity. Guess the celeb with as few flips as you can to get the most points</p>
-                <p class="button" id="instructions">Instructions</p>
-            </div>
-        </section>
+<body onload="focus()">
+    <section id="page-contain">
+        <div id="box">
+            <h1>Welcome to the Celebrity Quiz</h1>
+            <label for="username" id="label">Enter Username:</label>
+            <input type="text" id="username">
+            <button class="button" onclick="saveUsername()" aria-label="click to play quiz">Play Quiz</button>
+            <a href="highscores.html" class="button" id="playAgain">Highscores</a>
+            <p class="button" id="instructionsBox" onclick="instructionsGone()">Click an image section to reveal part of the celebrity. Guess the celeb with as few flips as you can to get the most points</p>
+            <p class="button" onclick="instructions()" id="instructions">Instructions</p>
+        </div>
+    </section>
     <noscript>
         Unfortunately the browser you are using does not support JavaScript
     </noscript>
