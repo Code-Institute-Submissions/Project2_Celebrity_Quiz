@@ -377,5 +377,19 @@ function beginGame() {
     let setScore = document.getElementById("score");
     setScore.innerText = score;
     points.innerText = pointsToWin;
+    LoadQuestion();
 
+    // Add event listener to images
+
+    let imageSelect = document.getElementsByClassName("picture-item");
+    for (let i = 0; i < imageSelect.length; i++) {
+        imageSelect[i].addEventListener('click', flipCard);
+    }    
+
+    // Add event listener to quiz answers
+
+    let choices = document.getElementsByClassName("quiz-button");
+    for (let i = 0; i < choices.length; i++) {
+        choices[i].addEventListener('click', checkAnswer);
+    }
 }
