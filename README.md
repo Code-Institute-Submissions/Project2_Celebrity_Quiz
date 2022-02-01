@@ -126,3 +126,43 @@ The highscores of the user are presented here, the below image shows only one as
 Highscores can only be seen once the quiz has been played through once and if user accesses this page before having played through the game the "play again" button is not visible. This prevents them being able to play the game without first inputting a username through the index.html page. 
 
 [return to contents](<#contents>)
+
+## Features left to Implement
+
+Key improvements 
+
+* It would be good to have a leaderboard rather than a highscores list allowing the user to see how they performed vs other users of the quiz. 
+
+Extra questions should be added to keep the quiz interesting and allow multiple play throughs without seeing the same celeb. Around 100 questions would probably offer a significantly improved user experience over the existing 25 questions. 
+
+[return to contents](<#contents>)
+
+# Testing
+
+## Validation of Code
+
+The Celebrity Quiz has been extensively tested. The code has been run through the [W3C html Validator](https://validator.w3.org/) and [W3C CSS validator](https://jigsaw.w3.org/css-validator/) with no errors. All pages returned the image below: 
+
+![celebrity quiz w3validator html](assets/readme_images/html-validator.png)
+
+The CSS code returned the response below: 
+
+![celebrity quiz w3validator CSS](assets/readme_images/css-validator.png)
+
+The exception is the quiz-end.html page which received two warnings for empty headings however, these are filled by the javascript running upon the page opening. If Javascript is not working the noscript would run telling the user this. As a result these warnings can be disregarded. 
+
+![celebrity quiz html warnings](assets/readme_images/html-warning.png)
+
+[JS Validator](https://jshint.com/) was used to ensure there were no syntax errors or missing semi colons in the Javascript code. There were no erroris in the code but there were 43 warnings which all related to "let", 'const', template literals and arrow function syntax only being available in ES6 or "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (randomNumber, pointsToWin, points)".
+
+The metrics read that: 
+
+There are 20 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 22 statements in it, while the median is 5.5.
+
+The most complex function has a cyclomatic complexity value of 9 while the median is 2.
+
+[return to contents](<#contents>)
