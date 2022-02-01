@@ -545,3 +545,21 @@ function LoadQuestion() {
     p4 = 0;
     qclicks = 0;
 }
+
+// sets the users score on the highscores page, stores it in an array on local storage and orders it largest to smallest. 
+
+function highScores() {
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    let score = localStorage.getItem('score');
+    highScores.push(score);
+    localStorage.removeItem('score');
+    //sort the array
+    highScores = highScores.map(Number);
+    highScores.sort(function(a, b){return a - b}).reverse();
+    //ensure array is not greater than 5. 
+    if (highScores.length > 5) {
+        highScores.splice(5);
+    }
+    //store array on local storage
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+}
