@@ -179,9 +179,9 @@ h1 {
     padding-bottom: 0.5rem;
 }
 
-/* leaderboard */
+/* highscores */
 
-#leaderboard-list li {
+#highscores-list li {
     list-style: none;
     background-color: #FBF8BE;
     color: #234E70;
@@ -287,5 +287,6 @@ h1 {
     .quiz-button {
         margin-left: 50px;
         width: 340px;
-    }  
+    }
+    
 }
