@@ -416,14 +416,14 @@ function preventDoubleClick(event) {
     }
 }
 
+// Function used to check how many times the images have been clicked. If more than once points to win will be reduced. 
 
-
-
-
-
-
-
-
+function clickCheck() {
+    clicks += 1;
+    if (clicks > 1) {
+        reducePointsToWin();
+    }
+}
 
 // reduces points to win with each image flipped. 
 
@@ -438,14 +438,18 @@ function reducePointsToWin() {
 
 let flipCard = (event) => {
     preventDoubleClick(event);
-    if (event.target.id === "pic1") {
+    if (event.target.id === "pic1" && p1 === 1) {
         event.target.setAttribute('src', array[randomNumber].img1);
-    } else if (event.target.id === "pic2") {
+        clickCheck();
+    } else if (event.target.id === "pic2" && p2 === 1) {
         event.target.setAttribute('src', array[randomNumber].img2);
-    } else if (event.target.id === "pic3") {
+        clickCheck();
+    } else if (event.target.id === "pic3" && p3 === 1) {
         event.target.setAttribute('src', array[randomNumber].img3);
-    } else if (event.target.id === "pic4") {
+        clickCheck();
+    } else if (event.target.id === "pic4" && p4 === 1) {
         event.target.setAttribute('src', array[randomNumber].img4);
+        clickCheck();
     }
 };
 
