@@ -378,4 +378,34 @@ To clone the repository in order to be able to make changes to the project witho
 
 [return to contents](<#contents>)
 
+# Credits
+
+## Content
+
+### Javascript
+
+* The concept of the flipping of an image was taken from the youtube tutorial available [here](https://www.youtube.com/watch?v=lhNdUVh3qCc&t=115s) starting at 1:55 though the actual code used is not the same. 
+
+* The concept of the progress bar seen on the quiz page was taken from [here](https://www.w3schools.com/howto/howto_js_progressbar.asp) though once again the code is different the idea of having a div with a width of 0% within another div element was taken from the link above. 
+
+* I used the following [link](https://blog.logrocket.com/localstorage-javascript-complete-guide/) to learn about the use of local storage. It is a complete guide to local storage. 
+
+### CSS
+
+* On the CSS styling sheet I first set a general rule across all sheets that font size is 62.5% (see line 2 of style.css). This makes 1 rem equal to 10px instead of 16 which is easier to work with. I took that idea from stack overflow, the link is available [here](https://stackoverflow.com/questions/47923397/css-fonts-rem-trick-62-5-or-6-25)
+
+* I had not worked with flexbox before but wanted to employ it for this project in order to become familiar with it. Although available as part of the code institute course I used the site (link [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)) to learn how it worked and could be utilised for this project. 
+
+### Other
+
+* The icons used were taken from [font awesome](https://fontawesome.com/).
+* I converted an emoji of a trophy into the favicon.
+
+## Media
+
+* The applause noise when a user gets an answer correct was taken from [here](https://mixkit.co/free-sound-effects/clap/)
+* The sad horn noise when a user gets an answer wrong was taken from [here](https://mixkit.co/free-sound-effects/sad/)
+* Images: 
+    
+
        
