@@ -211,3 +211,42 @@ The below references "all features are functional". This accounts for the follow
 * Once clicked the "click to see" button on the highscores page disapears and if the user has played through the quiz at least once a scoreboard is produced. If the user has played through more than once the scores are in order of largest to smallest with largest being at the top. A maximum of 5 top scores can be shown. 
 
 [return to contents](<#contents>)
+
+## Browser Testing 
+
+### Laptop Computer
+
+* Chrome
+    * Thoroughly tested and all features are functional
+
+* Mozilla Firefox
+    * Thoroughly tested and all features are functional
+
+* Microsoft Edge
+    * Thoroughly tested and all features are functional
+
+* Internet Explorer
+    * Internet explorer does not support the JS script and the click to enter button cannot be clicked so the quiz is unavailable on this browser. However, as this has been replaced with Microsoft Edge which does support all features of the quiz this should not be an issue. 
+
+[return to contents](<#contents>)
+
+### Mobile Phone
+
+* Chrome
+    * Thoroughly tested and all features are functional
+
+* Mozilla Firefox
+    * Thoroughly tested and all features are functional
+
+The site responsiveness was tested and found to be suitable on the following devices: 
+
+* Galaxy S5
+* Pixel 2 XL
+* Iphone 5 SE
+* Iphone 6/7/8
+* Iphone 6/7/8 Plus
+* Iphone X
+* iPad
+* iPad Pro
+
+[return to contents](<#contents>)
