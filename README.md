@@ -69,3 +69,42 @@ In case Roboto Slab isn't supported in the browser sans serif is available as a 
 ![instructions1](assets/readme_images/instructions1.png)  ![instructions2](assets/readme_images/instructions2.png)
 
 [return to contents](<#contents>)
+
+#### Quiz Page
+
+* The top row of the quiz opening page keeps a uniform, clear title available for the user to see. This is followed by their current score, the points available to win in that round and the progress bar
+    * The points to win reduces with each part of the celebrity image that is revealed. 40 is available with no clues, the user risks getting 0 if they guess at the stage. 20 points are available with a single section of the celebs face available to see, 10 points for two sections and so on.
+    * The progress bar indicates how many questions are available before the end of the quiz by filling up with each question answered. 
+
+![quiz page top row](assets/readme_images/top-row.png)
+
+* The central section of the quiz
+    * Initially the user is presented with a selection of four answers and no celebrity image. The image quickly lets the user know what to do and looks nice on opening the quiz page. Once the user clicks an area of the image that portion of the celebrity image is revealed
+
+The below shows before the user clicks
+
+![quiz main section](assets/readme_images/quiz-section.png)
+
+The below shows after a single click
+
+![quiz main section with one section revealed](assets/readme_images/quiz-section1.png)
+
+The user is then able to either guess who the image is of or click another section of the image to reveal more of the celebrity. 
+
+If they guess who is shown correctly the image flashes green and if the user has sound allowed they will hear applause, the points available will be added to the total score and a new question will be loaded. If incorrect the answer they selected will flash red and a sad horn noise will be heard if they have sound allowed, they will score 0 for that round. This adds value to the user with positive affirmation if they get the answer correct. The trumpet is slightly humerous if they get the wrong answer so they will not feel too bad about it. 
+
+The celebrity images are pulled out of an array at random so the user cannot play through the quiz a second time and know the answers without clicking to reveal the celebrity image. In addition only 5 of a total of 10 questions are asked each time the user takes the quiz which means the user is unlikely to ever experience the same questions in the same order. 
+
+![quiz main section correct answer](assets/readme_images/quiz-section2.png)
+
+* Bottom section of the quiz page. This section contains two features:
+    * The first is the instuctions again if the user did not check on the first page or forgets how the game works. When clicked the text disapears and is replaced by a box with instructions in. If this box is clicked it disapears and is replaced with the original text.
+    * The second feature allows the user to toggle sound effects on or off and adds value to the user if they want to listen to music or other sounds while playing the quiz without the quiz noises playing. 
+
+The below shows the section when neither feature has been clicked
+![bottom section of quiz page 1](assets/readme_images/quiz-bottom1.png)
+
+The below shows the section when both features have been clicked
+![bottom section of quiz page 2](assets/readme_images/quiz-bottom2.png)
+
+[return to contents](<#contents>)
