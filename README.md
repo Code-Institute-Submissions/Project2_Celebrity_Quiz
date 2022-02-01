@@ -4,11 +4,30 @@
 ![Github top language](https://img.shields.io/github/languages/top/cwallacebailey/Project_2_Celebrity_Quiz)
 
 
-The celebrity quiz is designed to be fully interactive, utilsing event listeners to create a image flip function which reveals a portion of a celebrity with each click. Each click then reduces the number of points which can be won in that particular round. the built in object, Math allows random question selection and order and sound effects are used to make the quiz engaging. It is designed to be responsive on multiple devices with a focus on simple, linear navigation. I chose this project mainly as a demonstration of the flexibility and range that Javascript allows.
+The celebrity quiz is designed to be fully interactive, utilsing event listeners to create a image flip function which reveals a portion of a celebrity with each click. Each click then reduces the number of points which can be won in that particular round. the built in object, Math allows random question selection and order and sound effects are used to make the quiz engaging. It is designed to be responsive on multiple devices with a focus on simple, linear navigation. I chose this project mainly as a demonstration of the flexibility and range that Javascript allows. 
 
 ![Responsive Mockup](assets/readme_images/responsive.png)
 
 Please see the final project [here](https://cwallacebailey.github.io/Project_2_Celebrity_Quiz/).
+
+## Contents
+
+* [User Experience](#user-experience)
+    * [Design](#design)
+    * [Colours](#colours)
+    * [Type Face](#type-face)
+* [Features](#features)
+    * [Existing Features](#existing-features)
+        * [Home Page](#home-page)
+        * [Quiz Page](#quiz-page)
+        * [Quiz End Page](#quiz-end-page)
+        * [Features to Implement](#features-left-to-implement)
+* [Testing](#testing)
+    * [Validation of Code](#validation-of-code)
+    * [Site Testing](#site-testing)
+    * [Lighthouse](#lighthouse)
+    * [Solved Bugs](#solved-bugs)
+* [Deployment](#deployment)
 
 # User Experience
 
@@ -38,6 +57,7 @@ In case Roboto Slab isn't supported in the browser sans serif is available as a 
 ### Existing Features
 
 #### Home Page
+
 
 * Heading and Username
     * The opening page immediately welcomes the user and lets them know the premise of the site, a celebrity quiz. 
@@ -345,8 +365,8 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
         highScores.sort(function(a, b){return a - b}).reverse()
 
     [return to contents](<#contents>)
-
-    # Deployment
+       
+# Deployment
 
 ## Steps for Deployment
 
@@ -407,5 +427,3 @@ To clone the repository in order to be able to make changes to the project witho
 * The sad horn noise when a user gets an answer wrong was taken from [here](https://mixkit.co/free-sound-effects/sad/)
 * Images: 
     
-
-       
