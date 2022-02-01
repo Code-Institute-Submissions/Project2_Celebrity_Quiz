@@ -166,3 +166,48 @@ Largest function has 22 statements in it, while the median is 5.5.
 The most complex function has a cyclomatic complexity value of 9 while the median is 2.
 
 [return to contents](<#contents>)
+
+## Site Testing
+---
+
+The below references "all features are functional". This accounts for the following: 
+
+## Across all pages
+
+* headings, buttons, images and fonts are responsive to screen size. 
+* The favicon displays correctly 
+
+## index.html
+
+* Username field does not allow the user to access the quiz without entering a username over 2 characters with none of the characters being spaces. Once clicked with a username over 2 characters the user is taken to the quiz page (quiz-page.html) and the username is stored on local storage to be diplayed at the quiz-end page
+
+* The highscores button takes you to the highscores page (highscores.html)
+
+* Instructions button can be clicked to reveal instructions on how to play the game and once clicked the instructions button disapears. If these instructions are themselves clicked they disapear and the instructions button re-appears.
+
+## Quiz Page
+
+* The score correctly adds the points available to win each round
+* The "points to win" reduces with each successive section of the celebrity image clicked excluding the first click which is free. This allows the user to score either 20, 10, 5 or 2 points. Points are not reduced if the same section of the image is clicked twice. 
+* The progress bar fills up with each successive answer selected and after 5 questions are answered the bar appears full. On starting the quiz the bar appears empty. The progress bar disapears entiely on screen sizes with a width below 550 pixels 
+* clicking each section of the "click to reveal" image reveals another section of the celebrity image to a maxmimum of four. The celebrity image is revealed in the correct order i.e. eyes do not appear below the nose or chin. 
+* Hovering over the answers causes them to increase in size and produce a shadow. When selected if the answer if correct it appears green, if incorrect it appears red. If the sound is enabled a correct answer gives applause, if incorrect a sad horn noise is played. 
+* "Click for Instructions" can be clicked to reveal instructions on how to play the game and once clicked the instructions button disapears. If these instructions are themselves clicked they disapear and the instructions button re-appears.
+* On loading the image of a speaker shows that sound is muted and sound will not play regardless of the user getting a correct or incorrect answer. If clicked the image changes to a speaker producing sound and answers selected will produce one of two sounds mentioned above. 
+* Once five answers have been given the user is taken to the quiz end page (quiz-end.html)
+
+## Quiz End
+
+* The users entered username is displayed and they are congratulated on finishing. The score is given and if they score more than 80 they see the message "Wow, you really know your celebs". If they score between 79 and 30 they see the message "Not bad. You recognised someone..." and anything below 30 "It's ok, celebs are not your thing"
+
+* The home button takes the user to the home page
+* play again takes the user to the quiz-page (quiz-page.html) and their username remains the same. 
+* The highscores button takes the user to the highscores tab "highscores.html"
+
+## Highscores tab
+
+* The home button takes you to the home page (index.html)
+* Highscores can be viewed at anypoint but if the user has not played through the quiz at least once the "play again" button is not visible. 
+* Once clicked the "click to see" button on the highscores page disapears and if the user has played through the quiz at least once a scoreboard is produced. If the user has played through more than once the scores are in order of largest to smallest with largest being at the top. A maximum of 5 top scores can be shown. 
+
+[return to contents](<#contents>)
