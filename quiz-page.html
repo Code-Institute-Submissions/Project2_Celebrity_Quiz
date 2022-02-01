@@ -17,8 +17,7 @@
     <!--code to prevent favicon error-->
     <link rel="shortcut icon" href="favicon.ico">
 </head>
-
-<body>
+<body onload="beginGame()">
     <section class="center">
         <h1>Guess The Celebrity</h1>
     </section>
@@ -55,6 +54,8 @@
         <p class="button" id="instructionsBox">Click an image section to reveal part of the celebrity. Guess the celeb with as few flips as you can to get the most points</p>
             <div class="break"></div>
         <p id="instructions">Click For Instructions</p>
+            <div class="break"></div>
+        <button id="sound" onclick="sound()" aria-label="click to allow sound"><i class="fas fa-volume-mute"></i></button>
     </section>
     <noscript>
         Unfortunately the browser you are using does not support JavaScript
