@@ -250,3 +250,99 @@ The site responsiveness was tested and found to be suitable on the following dev
 * iPad Pro
 
 [return to contents](<#contents>)
+
+## Lighthouse
+
+The site was tested using DevTools Lighthouse feature. Results below: 
+
+Desktop Site: 
+
+![celebrity quiz lighthouse-desktop](assets/readme_images/lighthouse_desktop.png)
+
+Mobile site: 
+
+
+![celebrity quiz lighthouse-desktop](assets/readme_images/lighthouse_mobile.png)
+
+Best practices could be improved for both by switching 7 items from HTTP/1.1 to HTTP/2. As the score was 93 which is considered good I left the code as is. 
+
+## Solved Bugs
+
+1. Username
+    * A username over two charachters is required to play the quiz. However spaces were originally considered a charachter and so a username could just be spaces or a single letter and space etc. to solve this I found the below on stack overflow could be used with an IF statement to check the length of the username entered excluding spaces. 
+    <br>
+    <br>
+    "username.replace(/ /g, '')"
+
+    * When the quiz has been completed the users score is added to local storage. Upon clicking "click to see" button on the highscores page the function highScores is run which adds the score to the highscores array and creates an ordered list. It was found that if the user visited the home page and then went back to the highscores list the score would be added twice. If they went back to the homepage again and then returned to the highscores page again the score would be added a third time. Essentially the score was being re-added each time the highScores function was called and it was called every time the "click to see" button was used. To remove this issue the score is only added if over 0 and once the function highScore is called the local storage was cleared using the code below: 
+    <br>
+    <br>
+    localStorage.clear()
+    <br>
+    <br>
+    This produced a username issue as the username was stored on local storage and so if the user used the "play again" instead of going through the home page and re-entering the username the username would be cleared. This meant that upon completing the quiz a second time the message to the user would read "null, your final score id:". To prevent this the localStorage.clear() was changed to remove only the users score on localStorage using the code below: 
+    <br>
+    <br>
+    localStorage.removeItem('score')
+    <br>
+    <br>
+
+    * If the user went from index.html to the highscore page using the highscores button the option to play again was there which meant the user could play through the quiz without setting a username. To fix this issue upon loading the highscores page playAgain() function is called. This checks to see if the highScores array is equal to or greater than one which is used as an indicator for wether or not the quiz has been played through at least once. If the array length is zero it is taken that the quiz has not been played through and the "play again" button's diplay is set to none preventing the user being able to use this option. 
+
+        [return to contents](<#contents>)
+
+2. Celebrity Image
+
+* Once the quiz-page (quiz-page.html) is loaded the celebrity image is 'hidden' with another image that says "click to flip" visible. Once a section has been clicked the function reducePointsToWin() is called which essentially halves the available points to win (note the first section being revealed does not call reducePointsToWin() and is 'free'). However, if the same section of the image was clicked multiple times the function reducePointsToWin() would keep being called which meant you could reduce the points to win to well below 1 point. To prevent this from happening a new function called preventDoubleClick(event) was created which checks how many times the section of the image has been clicked and if it is greater than 1 the function reducePointsToWin() is not called. This increased the cyclomatic complexity of the code due to the increased number of if statements however it is necessary for the game to function as intended. 
+
+* The celebrity image displayed is actually an image split into four equal sized images of 400px width by 100px height stacked on top of each other to create a full image (easily understood looking at the image below). When first loaded the images appeared as below which does not look good at all. This was fixed through research on stack overflow where I found that the gap below each image is actually to allow the portion of font that goes below the line space to exist. For example lower case 'g' has a portion of the letter below the line the rest of the text sits on. By reducing font size to 0 this gap was no longer required and the images stacked neatly. The actual code used was "font-size: 0;" in the CSS style sheet. 
+
+![celebrity quiz bug2b](assets/readme_images/bug2b.png)
+
+[return to contents](<#contents>)
+
+3. Quiz Answers
+
+* When the user selected an answer a timeout function is called before the new questions is loaded. It was possible for the user to use the window of time provided by the timeout function to click more than once on the correct answer to keep getting the points to win over and over again thus pushing their points way over the total possible. To prevent this the number of times the user has clicked on the answer is counted with the variable 'qclicks' which increases by one for each click. The answer is only checked and points won if the variable qclicks is equal to 1. Once the function loadQuestion() is run the qclicks is reset to 0.
+
+* The quiz answers are generated and an event listener applied to them so they can be clicked and the answer checked. The event listener used was originally inside the loadquestion() function which meant each time the function was called the event listener would increase in the number of times it was generated. So, clicking the first time would produce a single event, clicking the second time would generate two events and this continued and grew with each successive click. To fix this I had to use the tutoring service provided by code instiute and found from their advice that I needed to move the event listener to outside of the function it was in to prevent the loop issue. 
+
+    [return to contents](<#contents>)
+
+4. Favicon
+
+* Once the site was deployed the favicon chosen no longer worked, instead a 404 error was received. To fix this I had to use stack overflow and found that the code below needed to be added to the head element of my HTML code.
+<br>
+<br>
+"link rel="shortcut icon" href="favicon.ico""
+
+    [return to contents](<#contents>)
+
+5. Highscore
+
+* When the user finishes the quiz they can view their highscore. If they have completed the quiz more than once they would see a list of their highscores up to a maximum of 5. There were multiple bugs in the development of this process: 
+
+    * When first deployed the system of creating the highscores board did not work on Chrome because the users score was being pushed into the array (highScores) on local storage as an integer and arrays one local storage only accepts strings. As a result the score has to be pushed as a string through the change below where "score" is the score of the users current round:  
+
+            highScores.push(score);
+
+            had to become:
+
+            highScores.push(JSON.parse(score));
+
+            "JSON.parse" passes the variable as a string. 
+
+    * As stated above the array on local storage which held highscores (highScores) was an array of strings. This needed to be sorted highest to lowest in order to make sense as a highscores list but also to only show the users top 5 scores. This did not work as intended as the highscores list could not simply be ordered using highScores.sort(). Instead the array had to first be converted to a list of numbers using the code below: 
+
+        highScores = highScores.map(Number)
+
+        Next the array was ordered using the code below: 
+
+        highScores.sort(function(a, b){return a - b})
+
+        which produced a list which actually ran from lowest to highest. Finally the .reverse() function was used to reverse the order of the list from highest to lowest: 
+
+        highScores.sort(function(a, b){return a - b}).reverse()
+
+    [return to contents](<#contents>)
+       
