@@ -409,6 +409,51 @@ let flipCard = (event) => {
     }
 };
 
+function checkAnswer(event) {
+    // check answer variables
+        let selection = event.target;
+        let answer = selection.innerText;
+        let correctAnswer = array[randomNumber].answer;
+    // points system variables
+        let points = document.getElementById("pointsToWin");
+    // progress bar variable
+        let progressBar = document.getElementById("progressBar");
+    // sound playing variables
+        let cheer = new Audio('assets/mp3/cheering.wav');
+        let sad = new Audio('assets/mp3/sad.wav');
+        let sound = document.getElementById("sound");
+
+        if (answer === correctAnswer) {
+            selection.style.backgroundColor = "green";
+            if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
+                cheer.play();
+                }
+            scoreUpdate();
+            clicks = 0;
+        } else {
+            selection.style.backgroundColor = "red";
+            if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
+                sad.play();
+                }
+            points.innerText = 20;
+            clicks = 0;
+            }
+        setTimeout(function() {
+            let score = parseInt(document.getElementById("score").innerText);
+            selection.style.backgroundColor = "#0c1a25";
+            array.splice(randomNumber,1);
+            questions += 1;
+            progressBar.style.width = `${((questions)/5)*100}%`;
+    
+            if (questions === 5) {
+                localStorage.setItem('score', score);
+                window.location.href = "quiz-end.html";
+            } else { 
+                LoadQuestion();
+            }
+        }, 1000);
+    }
+
 // loads the next question once the user has answered the previous question
 
 function LoadQuestion() {
