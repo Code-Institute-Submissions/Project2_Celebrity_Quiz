@@ -551,7 +551,7 @@ function LoadQuestion() {
 function highScores() {
     let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
     let score = localStorage.getItem('score');
-    highScores.push(score);
+    highScores.push(JSON.parse(score));
     localStorage.removeItem('score');
     //sort the array
     highScores = highScores.map(Number);
