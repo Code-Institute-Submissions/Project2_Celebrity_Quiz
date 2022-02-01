@@ -21,3 +21,16 @@ function instructionsGone() {
     let instructions = document.getElementById("instructions");
     instructions.setAttribute("style", "display: block");
 }
+
+// save username
+
+function saveUsername() {
+    let username = document.getElementById("username").value;
+    usernameCheck = username.replace(/ /g, ''); // removes all spaces
+    if (usernameCheck.length <= 2) {
+        alert("Please enter a username over 2 characters");
+    } else {
+    localStorage.setItem('username', username);
+    window.location.href = "quiz-page.html";    
+    }
+}
