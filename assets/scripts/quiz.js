@@ -546,6 +546,25 @@ function LoadQuestion() {
     qclicks = 0;
 }
 
+// sets quiz end page as the final score and gives the user their rating
+
+function setScore() {
+    let score = localStorage.getItem('score');
+    document.getElementById("finalScore").innerText = score;
+    
+    let username = localStorage.getItem('username');
+    document.getElementById("name").innerHTML = `${username}, your final score is:`;
+    
+    if (score >= 80) {
+        document.getElementById("rank").innerText = "Wow, you really know your celebs";
+    } else if (score < 79 && score >= 30) {
+        document.getElementById("rank").innerText = "Not bad. You recognised someone...";
+    } else {
+        document.getElementById("rank").innerText = "It's ok, celebs are not your thing";
+    }
+    highScores();
+}
+
 // sets the users score on the highscores page, stores it in an array on local storage and orders it largest to smallest. 
 
 function highScores() {
