@@ -362,3 +362,20 @@ const array = [
     answer : '4. Will Smith',
     },
     ];
+
+// global variables
+
+let questions = 0;
+let clicks = 0;
+
+// begin game called when quiz-page.html is loaded
+
+function beginGame() {
+    let score = 0;
+    let pointsToWin = 20;
+    let points = document.getElementById("pointsToWin");
+    let setScore = document.getElementById("score");
+    setScore.innerText = score;
+    points.innerText = pointsToWin;
+
+}
