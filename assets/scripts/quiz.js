@@ -394,6 +394,28 @@ function beginGame() {
     }
 }
 
+let p1 = 0; //global variables
+let p2 = 0; //global variables
+let p3 = 0; //global variables
+let p4 = 0; //global variables
+
+// function below is used in flipcard() to stop the user being able to click the same image section twice and still reducing points to win
+
+function preventDoubleClick(event) {
+    if (event.target.id === "pic1") {
+        p1 += 1;
+    }
+    else if (event.target.id === "pic2") {
+        p2 += 1;
+    }
+    else if (event.target.id === "pic3") {
+        p3 += 1;
+    }
+    else if (event.target.id === "pic4") {
+        p4 += 1;
+    }
+}
+
 // flips the card. If more than one section has been revealed points to win is halved by calling clickCheck() which calls reducePointsToWin()
 
 let flipCard = (event) => {
