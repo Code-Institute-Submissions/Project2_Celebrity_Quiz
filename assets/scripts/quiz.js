@@ -408,3 +408,27 @@ let flipCard = (event) => {
         event.target.setAttribute('src', array[randomNumber].img4);
     }
 };
+
+// loads the next question once the user has answered the previous question
+
+function LoadQuestion() {
+    let picture1 = document.getElementById("pic1");
+    let picture2 = document.getElementById("pic2");
+    let picture3 = document.getElementById("pic3");
+    let picture4 = document.getElementById("pic4");
+    let q1 = document.getElementById("q1");
+    let q2 = document.getElementById("q2");
+    let q3 = document.getElementById("q3");
+    let q4 = document.getElementById("q4");
+    let multiple = array.length;
+    globalThis.randomNumber = Math.floor(Math.random()*multiple); // Global Variable 'randomNumber'
+        
+    picture1.src = 'assets/images/click1.png';
+    picture2.src = 'assets/images/click2.png';
+    picture3.src = 'assets/images/click3.png';
+    picture4.src = 'assets/images/click4.png';
+    q1.innerHTML = array[randomNumber].choice1;
+    q2.innerHTML = array[randomNumber].choice2;
+    q3.innerHTML = array[randomNumber].choice3;
+    q4.innerHTML = array[randomNumber].choice4;
+}
