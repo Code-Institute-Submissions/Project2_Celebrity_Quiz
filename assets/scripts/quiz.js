@@ -393,3 +393,18 @@ function beginGame() {
         choices[i].addEventListener('click', checkAnswer);
     }
 }
+
+// flips the card. If more than one section has been revealed points to win is halved by calling clickCheck() which calls reducePointsToWin()
+
+let flipCard = (event) => {
+    preventDoubleClick(event);
+    if (event.target.id === "pic1") {
+        event.target.setAttribute('src', array[randomNumber].img1);
+    } else if (event.target.id === "pic2") {
+        event.target.setAttribute('src', array[randomNumber].img2);
+    } else if (event.target.id === "pic3") {
+        event.target.setAttribute('src', array[randomNumber].img3);
+    } else if (event.target.id === "pic4") {
+        event.target.setAttribute('src', array[randomNumber].img4);
+    }
+};
