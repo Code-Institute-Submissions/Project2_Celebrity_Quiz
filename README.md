@@ -108,3 +108,21 @@ The below shows the section when both features have been clicked
 ![bottom section of quiz page 2](assets/readme_images/quiz-bottom2.png)
 
 [return to contents](<#contents>)
+
+#### Quiz End Page
+
+* Once the user has completed the quiz they are brought to the end of quiz page. Here the user is congratulated on finishing, their username is displayed along with their score and a comment under the score which is dependant on the score iteself. Over 100 it says "Wow, you really know your celebs", between 99 and 50 points it says "Not bad. You recognised someone..." ad under 50 it says "It's ok, celebs are not your thing". This adds value to the user with positive affirmation, using their name to make them feel welcome and then letting them know their score. 
+
+![final page](assets/readme_images/finalpage.png)
+
+From here the user can play again, go to the home page or check their highscores. 
+
+#### Highscores Page
+
+The highscores of the user are presented here, the below image shows only one as it has only been played through once. If played successive times more scores would appear up to a maximum of 5. Once the user has played through more than 5 times only the top 5 scores would be shown as the high scores array uses a splice to remove the lowest scores until only 5 high scores remain.
+
+![Highscores page](assets/readme_images/highscores.png)
+
+Highscores can only be seen once the quiz has been played through once and if user accesses this page before having played through the game the "play again" button is not visible. This prevents them being able to play the game without first inputting a username through the index.html page. 
+
+[return to contents](<#contents>)
