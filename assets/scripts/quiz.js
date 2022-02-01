@@ -520,4 +520,9 @@ function LoadQuestion() {
     q2.innerHTML = array[randomNumber].choice2;
     q3.innerHTML = array[randomNumber].choice3;
     q4.innerHTML = array[randomNumber].choice4;
+    p1 = 0;
+    p2 = 0;
+    p3 = 0;
+    p4 = 0;
+    qclicks = 0;
 }
