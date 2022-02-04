@@ -419,7 +419,7 @@ const array = [
     choice2 : '2. Jordan Henderson',
     choice3 : '3. Jordan Pickford',
     choice4 : '4. Harry Kane',
-    answer : '1. George Michael',
+    answer : '4. Harry Kane',
     },
     {
     name : 'jackiec',
@@ -447,10 +447,10 @@ const array = [
     },
     {
     name : 'markz',
-    img1 : 'assets/images/joshb1.png',
-    img2 : 'assets/images/joshb2.png',
-    img3 : 'assets/images/joshb3.png',
-    img4 : 'assets/images/joshb4.png',
+    img1 : 'assets/images/markz1.png',
+    img2 : 'assets/images/markz2.png',
+    img3 : 'assets/images/markz3.png',
+    img4 : 'assets/images/markz4.png',
     choice1 : '1. Satya Nadella',
     choice2 : '2. Tim Reilly',
     choice3 : '3. Mark Ruffalo',
@@ -662,7 +662,7 @@ function checkAnswer(event) {
         globalQuestionsAnswered += 1;
         progressBar.style.width = `${((globalQuestionsAnswered)/5)*100}%`;
 
-        if (globalQuestionsAnswered === 5) {
+        if (globalQuestionsAnswered === 40) {
             localStorage.setItem('score', score);
             window.location.href = "quiz-end.html";
         } else { 
