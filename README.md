@@ -152,6 +152,10 @@ Highscores can only be seen once the quiz has been played through once and if us
 
 [return to contents](<#contents>)
 
+#### array
+
+The question array has been linked to the images with a 'name' attribute making the images associated with the questions easy to find if they were to be deleted. 
+
 ## Features left to Implement
 
 Key improvements 
