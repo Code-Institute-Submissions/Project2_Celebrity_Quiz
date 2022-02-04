@@ -4,7 +4,7 @@
 ![Github top language](https://img.shields.io/github/languages/top/cwallacebailey/Project_2_Celebrity_Quiz)
 
 
-The celebrity quiz is designed to be fully interactive, utilsing event listeners to create a image flip function which reveals a portion of a celebrity with each click. Each click then reduces the number of points which can be won in that particular round. the built in object, Math allows random question selection and order and sound effects are used to make the quiz engaging. It is designed to be responsive on multiple devices with a focus on simple, linear navigation. I chose this project mainly as a demonstration of the flexibility and range that Javascript allows. 
+The celebrity quiz is designed to be fully interactive, utilsing event listeners to create a image flip function which reveals a portion of a celebrity with each click. Each click then reduces the number of points which can be won in that particular round. The built in object, Math allows random selection/ order of questions with sound effects used to make the quiz engaging. It is designed to be responsive on multiple devices with a focus on simple, linear navigation. I chose this project mainly as a demonstration of the flexibility and range that Javascript allows. The main aim of the project is to be a stimulating and engaging quiz. 
 
 ![Responsive Mockup](assets/readme_images/responsive.png)
 
@@ -28,6 +28,12 @@ Please see the final project [here](https://cwallacebailey.github.io/Project_2_C
     * [Lighthouse](#lighthouse)
     * [Solved Bugs](#solved-bugs)
 * [Deployment](#deployment)
+
+# Goals and Target Audience
+
+The main aim of this quiz is to be fun and engaging, testing the knoweldge of the user in being able to recognise celebrities off small portions of their face. Celebrity quizes have proven to have a wide audience with the buzzfeed craze and constant updates on news sites about celebrities and their lives. People are facinated with them. This quiz is therefore designed to have a wide reach and be appealing to new users with 40 potential questions but also to repeat users as the array of questions and images is set up to be easily updated, changed or added to making new questions easy to place into the quiz and the removal of old questions just as simple.
+
+Aside from attracting and engaging a wide audience the project goal is really to display the abilities Javascript allows you to offer to a site. This project utilises for loops, event listeners, push(), splice(), Math.random(), updating inner HTML, local storage and nested ifs / functions as well as many other items to create an engaging quiz. 
 
 # User Experience
 
@@ -57,7 +63,6 @@ In case Roboto Slab isn't supported in the browser sans serif is available as a 
 ### Existing Features
 
 #### Home Page
-
 
 * Heading and Username
     * The opening page immediately welcomes the user and lets them know the premise of the site, a celebrity quiz. 
@@ -365,6 +370,10 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
         highScores.sort(function(a, b){return a - b}).reverse()
 
     [return to contents](<#contents>)
+
+## unsolved bugs
+
+* On one occassion when the image was clicked it did not flip but no error was given in the console and I repeatedly tested the site and never saw this again. As a result I have had to beleive this is a one off random occurrence as I cannot make it happen again. 
        
 # Deployment
 
@@ -425,5 +434,6 @@ To clone the repository in order to be able to make changes to the project witho
 
 * The applause noise when a user gets an answer correct was taken from [here](https://mixkit.co/free-sound-effects/clap/)
 * The sad horn noise when a user gets an answer wrong was taken from [here](https://mixkit.co/free-sound-effects/sad/)
-* Images: 
-    
+* All images were taken from commons.wikimedia.org which requires only that the license (available [here](https://creativecommons.org/licenses/by/3.0/deed.en)) be made available and that it is noted if the image is changed which they have not been. Having spoken to student support I have had it confirmed that a blanket recognition is suitable for all images taken from commons.wikimedia.org so long as the license is made avaialble. 
+
+I would like to take this time to thank my Mentor, Precious Liege for his help throughout this project. 
