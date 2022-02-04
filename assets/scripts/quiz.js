@@ -365,8 +365,8 @@ const array = [
 
 // global variables
 
-let questions = 0;
-let clicks = 0;
+let globalQuestionsAnswered = 0;
+let globalImageClicks = 0;
 
 // begin game called when quiz-page.html is loaded
 
@@ -394,33 +394,33 @@ function beginGame() {
     }
 }
 
-let p1 = 0; //global variables
-let p2 = 0; //global variables
-let p3 = 0; //global variables
-let p4 = 0; //global variables
+let globalPreventClick1 = 0; //global variables
+let globalPreventClick2 = 0; //global variables
+let globalPreventClick3 = 0; //global variables
+let globalPreventClick4 = 0; //global variables
 
 // function below is used in flipcard() to stop the user being able to click the same image section twice and still reducing points to win
 
 function preventDoubleClick(event) {
     if (event.target.id === "pic1") {
-        p1 += 1;
+        globalPreventClick1 += 1;
     }
     else if (event.target.id === "pic2") {
-        p2 += 1;
+        globalPreventClick2 += 1;
     }
     else if (event.target.id === "pic3") {
-        p3 += 1;
+        globalPreventClick3 += 1;
     }
     else if (event.target.id === "pic4") {
-        p4 += 1;
+        globalPreventClick4 += 1;
     }
 }
 
 // Function used to check how many times the images have been clicked. If more than once points to win will be reduced. 
 
 function clickCheck() {
-    clicks += 1;
-    if (clicks > 1) {
+    globalImageClicks += 1;
+    if (globalImageClicks > 1) {
         reducePointsToWin();
     }
 }
@@ -438,22 +438,22 @@ function reducePointsToWin() {
 
 let flipCard = (event) => {
     preventDoubleClick(event);
-    if (event.target.id === "pic1" && p1 === 1) {
+    if (event.target.id === "pic1" && globalPreventClick1 === 1) {
         event.target.setAttribute('src', array[randomNumber].img1);
         clickCheck();
-    } else if (event.target.id === "pic2" && p2 === 1) {
+    } else if (event.target.id === "pic2" && globalPreventClick2 === 1) {
         event.target.setAttribute('src', array[randomNumber].img2);
         clickCheck();
-    } else if (event.target.id === "pic3" && p3 === 1) {
+    } else if (event.target.id === "pic3" && globalPreventClick3 === 1) {
         event.target.setAttribute('src', array[randomNumber].img3);
         clickCheck();
-    } else if (event.target.id === "pic4" && p4 === 1) {
+    } else if (event.target.id === "pic4" && globalPreventClick4 === 1) {
         event.target.setAttribute('src', array[randomNumber].img4);
         clickCheck();
     }
 };
 
-let qclicks = 0 // global variable
+let globalQuestionClicks = 0 // global variable
 
 function checkAnswer(event) {
 // check answer variables
@@ -469,32 +469,32 @@ function checkAnswer(event) {
     let sad = new Audio('assets/mp3/sad.wav');
     let sound = document.getElementById("sound");
 
-    qclicks += 1
+    globalQuestionClicks += 1
 
-    if (qclicks === 1) {
+    if (globalQuestionClicks === 1) {
     if (answer === correctAnswer) {
         selection.style.backgroundColor = "green";
         if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
             cheer.play();
             }
         scoreUpdate();
-        clicks = 0;
+        globalImageClicks = 0;
     } else {
         selection.style.backgroundColor = "red";
         if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
             sad.play();
             }
         points.innerText = 20;
-        clicks = 0;
+        globalImageClicks = 0;
         }
     setTimeout(function() {
         let score = parseInt(document.getElementById("score").innerText);
         selection.style.backgroundColor = "#0c1a25";
         array.splice(randomNumber,1);
-        questions += 1;
-        progressBar.style.width = `${((questions)/5)*100}%`;
+        globalQuestionsAnswered += 1;
+        progressBar.style.width = `${((globalQuestionsAnswered)/5)*100}%`;
 
-        if (questions === 5) {
+        if (globalQuestionsAnswered === 5) {
             localStorage.setItem('score', score);
             window.location.href = "quiz-end.html";
         } else { 
@@ -539,11 +539,11 @@ function LoadQuestion() {
     q2.innerHTML = array[randomNumber].choice2;
     q3.innerHTML = array[randomNumber].choice3;
     q4.innerHTML = array[randomNumber].choice4;
-    p1 = 0;
-    p2 = 0;
-    p3 = 0;
-    p4 = 0;
-    qclicks = 0;
+    globalPreventClick1 = 0;
+    globalPreventClick2 = 0;
+    globalPreventClick3 = 0;
+    globalPreventClick4 = 0;
+    globalQuestionClicks = 0;
 }
 
 // sets quiz end page as the final score and gives the user their rating
