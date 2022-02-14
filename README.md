@@ -438,6 +438,98 @@ To clone the repository in order to be able to make changes to the project witho
 
 * The applause noise when a user gets an answer correct was taken from [here](https://mixkit.co/free-sound-effects/clap/)
 * The sad horn noise when a user gets an answer wrong was taken from [here](https://mixkit.co/free-sound-effects/sad/)
-* All images were taken from commons.wikimedia.org which requires only that the license (available [here](https://creativecommons.org/licenses/by/3.0/deed.en)) be made available and that it is noted if the image is changed which they have not been. Having spoken to student support I have had it confirmed that a blanket recognition is suitable for all images taken from commons.wikimedia.org so long as the license is made avaialble. 
+
+### Images from Wikimedia Commons
+
+All images below are from Wikimedia Commons. The follow this [license](https://creativecommons.org/licenses/by/3.0/deed.en). All images have been resized to 400px by 400px with cropping where required to create a square required for the game. 
+
+[Beyonce](https://commons.wikimedia.org/wiki/File:Beyonc%C3%A9_Knowles_2009.jpg)
+
+[Christian Bale](https://commons.wikimedia.org/wiki/File:MJK_35690_Christian_Bale_(Vice,_Berlinale_2019).jpg)
+
+[Elija Wood](https://commons.wikimedia.org/wiki/File:Elijah_Wood_(36103089852)_(cropped).jpg)
+
+[Lea Seydoux](https://commons.wikimedia.org/wiki/File:L%C3%A9a_Seydoux_Cannes_2013.jpg)
+
+[Nichola Cage](https://commons.wikimedia.org/wiki/File:Nicolas_Cage_66%C3%A8me_Festival_de_Venise.jpg)
+
+[Brad Pitt](https://commons.wikimedia.org/wiki/File:Brad_Pitt_in_2014_(cropped).jpg)
+
+[Jo Brand](https://commons.wikimedia.org/wiki/File:Jo_Brand_at_The_Great_Big_Walk_2017_(cropped).jpg)
+
+[Wesley Snipes](https://commons.wikimedia.org/wiki/File:Wesley_Snipes_(41969097750)_(cropped).jpg)
+
+[Chris Rock](https://commons.wikimedia.org/wiki/File:Chris_Rock_2014.jpg)
+
+[Courtney Cox](https://commons.wikimedia.org/wiki/File:Courteney_Cox.jpg)
+
+[David Schwimmer](https://commons.wikimedia.org/wiki/File:David_Schwimmer.jpg)
+
+[Halle Berry](https://commons.wikimedia.org/wiki/File:Halle_Berry_10.jpg)
+
+[Jay Z](https://commons.wikimedia.org/wiki/File:Jay-Z-02-mika.jpg)
+
+[Matthew Perry](https://commons.wikimedia.org/wiki/File:Matthew_Perry_2013.jpg)
+
+[Michelle Obama](https://commons.wikimedia.org/wiki/File:Michelle_Obama_by_Gage_Skidmore.jpg)
+
+[Orlando Bloom](https://commons.wikimedia.org/wiki/File:Orlando_Bloom_10.jpg)
+
+[Buzz Aldrin](https://commons.wikimedia.org/wiki/File:Buzz_Aldrin_by_Gage_Skidmore_3.jpg)
+
+[Dwayne Johnson](https://commons.wikimedia.org/wiki/File:Intercontinental_Champion_THE_ROCK.jpg)
+
+[Emelia clarke](https://commons.wikimedia.org/wiki/File:Emilia_Clarke_by_Gage_Skidmore_2_(cropped).jpg)
+
+[George Michael](https://commons.wikimedia.org/wiki/File:George_Michael_at_Antwerp_(BRAVO).jpg)
+
+[Gwendoline Christie](https://commons.wikimedia.org/wiki/File:Gwendoline_Christie_en_London_Film_%26_ComicCon,_2012.png)
+
+[Harry Kane](https://commons.wikimedia.org/wiki/File:Harry_Kane_2018.jpg)
+
+[Jackie Chan](https://commons.wikimedia.org/wiki/File:Jackie_Chan_by_Gage_Skidmore.jpg)
+
+[Josh Brolin](https://commons.wikimedia.org/wiki/File:Josh_Brolin_by_Gage_Skidmore.jpg)
+
+[Mark Zuckerberg](https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_(7985186041).jpg)
+
+[Mike Tyson](https://commons.wikimedia.org/wiki/File:Mike_Tyson_2011.jpg)
+
+[Aubameyang](https://commons.wikimedia.org/wiki/File:1_Pierre-Emerick_Aubameyang_(cropped).jpg)
+
+[Ringo Starr](https://commons.wikimedia.org/wiki/File:Ringo_Starr_and_all_his_band_(8469748653).jpg)
+
+[Stan Lee](https://commons.wikimedia.org/wiki/File:Stan_Lee_2014_Phoenix_Comicon_(cropped).jpg)
+
+[Tommy Lee Jones](https://commons.wikimedia.org/wiki/File:Tommy_Lee_Jones_2017.jpg)
+
+[Vin Diesel](https://commons.wikimedia.org/wiki/File:Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png)
+
+### Images from Other sources
+
+All images below from Flickr follow this [license](https://creativecommons.org/licenses/by/2.0/). All images have been resized to 400px by 400px with cropping where required to create a square required for the game. 
+
+[Danny Trejo](https://www.flickr.com/photos/deneyterrio/438628394)
+
+[Mahershala Ali](https://www.flickr.com/photos/disneyabc/33143438905)
+
+[Viggo Mortensen](https://www.flickr.com/photos/nathancongleton/15244783986)
+
+[Will Smith](https://www.flickr.com/photos/walmartcorporate/5793543057)
+
+All images below from Wikipedia follow the license below the link. All images have been resized to 400px by 400px with cropping where required to create a square required for the game. 
+
+[Donald Sutherland](https://www.wikiwand.com/en/Donald_Sutherland)
+
+https://creativecommons.org/licenses/by-sa/3.0/
+
+[Eddie Murphy](https://simple.wikipedia.org/wiki/Eddie_Murphy#/media/File:Eddie_Murphy_by_David_Shankbone.jpg)
+
+https://creativecommons.org/licenses/by/2.0/
+
+[Joaquin Phoenix](https://en.wikipedia.org/wiki/Joaquin_Phoenix#/media/File:Joaquin_Phoenix_in_2018.jpg)
+
+https://creativecommons.org/licenses/by-sa/3.0/
+
 
 I would like to take this time to thank my Mentor, Precious Liege for his help throughout this project. 
