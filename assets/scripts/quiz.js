@@ -662,7 +662,7 @@ function checkAnswer(event) {
         globalQuestionsAnswered += 1;
         progressBar.style.width = `${((globalQuestionsAnswered)/5)*100}%`;
 
-        if (globalQuestionsAnswered === 40) {
+        if (globalQuestionsAnswered === 5) {
             localStorage.setItem('score', score);
             window.location.href = "quiz-end.html";
         } else { 
