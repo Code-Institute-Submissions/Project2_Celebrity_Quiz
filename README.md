@@ -8,10 +8,11 @@ The celebrity quiz is designed to be fully interactive, utilsing event listeners
 
 ![Responsive Mockup](assets/readme_images/responsive.png)
 
-Please see the final project [here](https://cwallacebailey.github.io/Project_2_Celebrity_Quiz/).
+Please see the final project [here](https://cwallacebailey.github.io/Project2_Celebrity_Quiz/).
 
 ## Contents
 
+* [Goals and Target Audience](#goals-and-target-audience)
 * [User Experience](#user-experience)
     * [Design](#design)
     * [Colours](#colours)
@@ -21,17 +22,22 @@ Please see the final project [here](https://cwallacebailey.github.io/Project_2_C
         * [Home Page](#home-page)
         * [Quiz Page](#quiz-page)
         * [Quiz End Page](#quiz-end-page)
-        * [Features to Implement](#features-left-to-implement)
+    * [Features to Implement](#features-left-to-implement)
 * [Testing](#testing)
     * [Validation of Code](#validation-of-code)
     * [Site Testing](#site-testing)
     * [Lighthouse](#lighthouse)
     * [Solved Bugs](#solved-bugs)
+    * [Unsolved Bugs](#unsolved-bugs)
 * [Deployment](#deployment)
+* [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+    * [Other Contributions](#other-contributions)
 
 # Goals and Target Audience
 
-The main aim of this quiz is to be fun and engaging, testing the knoweldge of the user in being able to recognise celebrities off small portions of their face. Celebrity quizes have proven to have a wide audience with the buzzfeed craze and constant updates on news sites about celebrities and their lives. People are facinated with them. This quiz is therefore designed to have a wide reach and be appealing to new users with 38 potential questions but also to repeat users as the array of questions and images is set up to be easily updated, changed or added to making new questions easy to place into the quiz and the removal of old questions just as simple.
+The main aim of this quiz is to be fun and engaging, testing the knoweldge of the user in being able to recognise celebrities off small portions of their face. Celebrity quizes have proven to have a wide audience with the buzzfeed craze and constant updates on news sites about celebrities and their lives. People are facinated with them. This quiz is therefore designed to have a wide reach and be appealing to new users with 38 potential questions but also to repeat users as the array of questions and images is set up to be easily updated, changed or added to making new questions easy to place into the quiz and the removal of old questions just as simple. Once deployed the questions would be updated each week to keep the game fresh. 
 
 Aside from attracting and engaging a wide audience the project goal is really to display the abilities Javascript allows you to offer to a site. This project utilises for loops, event listeners, push(), splice(), Math.random(), updating inner HTML, local storage and nested ifs / functions as well as many other items to create an engaging quiz. 
 
@@ -160,9 +166,9 @@ The question array has been linked to the images with a 'name' attribute making 
 
 Key improvements 
 
-* It would be good to have a leaderboard rather than a highscores list allowing the user to see how they performed vs other users of the quiz. 
+* It would be good to have a leaderboard rather than a highscores list allowing the user to see how they performed vs other users of the quiz. The highscores list could also show usernames against it incase two different users were using playing the quiz on the same computer. 
 
-Extra questions should be added to keep the quiz interesting and allow multiple play throughs without seeing the same celeb. Around 100 questions would probably offer a significantly improved user experience over the existing 25 questions. 
+Extra questions should be added to keep the quiz interesting and allow multiple play throughs without seeing the same celeb. Around 100 questions would probably offer a significantly improved user experience over the existing 38 questions. However, the array has been set up to allow you to easily add and remove images and questions. This means return users can get a positive experience if the quiz were deployed and then the questions updated each week, somewhat like how wordle is updated everyday.  
 
 [return to contents](<#contents>)
 
@@ -423,16 +429,22 @@ To clone the repository in order to be able to make changes to the project witho
 
 * I used the following [link](https://blog.logrocket.com/localstorage-javascript-complete-guide/) to learn about the use of local storage. It is a complete guide to local storage. 
 
+[return to contents](<#contents>)
+
 ### CSS
 
 * On the CSS styling sheet I first set a general rule across all sheets that font size is 62.5% (see line 2 of style.css). This makes 1 rem equal to 10px instead of 16 which is easier to work with. I took that idea from stack overflow, the link is available [here](https://stackoverflow.com/questions/47923397/css-fonts-rem-trick-62-5-or-6-25)
 
 * I had not worked with flexbox before but wanted to employ it for this project in order to become familiar with it. Although available as part of the code institute course I used the site (link [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)) to learn how it worked and could be utilised for this project. 
 
+[return to contents](<#contents>)
+
 ### Other
 
 * The icons used were taken from [font awesome](https://fontawesome.com/).
 * I converted an emoji of a trophy into the favicon.
+
+[return to contents](<#contents>)
 
 ## Media
 
@@ -505,6 +517,13 @@ All images below are from Wikimedia Commons. The follow this [license](https://c
 
 [Vin Diesel](https://commons.wikimedia.org/wiki/File:Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png)
 
+---
+
+[return to contents](<#contents>)
+
+
+---
+
 ### Images from Other sources
 
 All images below from Flickr follow this [license](https://creativecommons.org/licenses/by/2.0/). All images have been resized to 400px by 400px with cropping where required to create a square required for the game. 
@@ -531,5 +550,14 @@ https://creativecommons.org/licenses/by/2.0/
 
 https://creativecommons.org/licenses/by-sa/3.0/
 
+---
+
+[return to contents](<#contents>)
+
+---
+
+## Other Contributions
 
 I would like to take this time to thank my Mentor, Precious Liege for his help throughout this project. 
+
+[return to contents](<#contents>)
