@@ -1,3 +1,11 @@
+let globalQuestionClicks = 0 // global variable used in checkAnswer(event) function so question answers cannot be clicked more than once per round
+let globalQuestionsAnswered = 0; // global variable used in checkAnswer(event) function. Increased by 1 per question answered when it == 5 quiz ends
+let globalImageClicks = 0; // global variable used in clickCheck() function so if more than one section flipped reducePoints() is called
+let globalPreventClick1 = 0; //global variables used in flipImage() function to prevent image section 1 being clicked more than once
+let globalPreventClick2 = 0; //global variables used in flipImage() function to prevent image section 2 being clicked more than once
+let globalPreventClick3 = 0; //global variables used in flipImage() function to prevent image section 3 being clicked more than once
+let globalPreventClick4 = 0; //global variables used in flipImage() function to prevent image section 4 being clicked more than once
+
 // focus on enter username box on opening index.html
 
 function focus() {
@@ -531,11 +539,6 @@ const array = [
     },
     ];
 
-// global variables
-
-let globalQuestionsAnswered = 0;
-let globalImageClicks = 0;
-
 // begin game called when quiz-page.html is loaded
 
 function beginGame() {
@@ -561,11 +564,6 @@ function beginGame() {
         choices[i].addEventListener('click', checkAnswer);
     }
 }
-
-let globalPreventClick1 = 0; //global variables
-let globalPreventClick2 = 0; //global variables
-let globalPreventClick3 = 0; //global variables
-let globalPreventClick4 = 0; //global variables
 
 // function below is used in flipcard() to stop the user being able to click the same image section twice and still reducing points to win
 
@@ -620,8 +618,6 @@ let flipCard = (event) => {
         clickCheck();
     }
 };
-
-let globalQuestionClicks = 0 // global variable
 
 function checkAnswer(event) {
 // check answer variables
