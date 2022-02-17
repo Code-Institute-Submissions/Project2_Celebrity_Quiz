@@ -17,12 +17,15 @@ Please see the final project [here](https://cwallacebailey.github.io/Project2_Ce
     * [Design](#design)
     * [Colours](#colours)
     * [Type Face](#type-face)
+* [Technologies Used](#technologies-used)
 * [Features](#features)
     * [Existing Features](#existing-features)
         * [Home Page](#home-page)
         * [Quiz Page](#quiz-page)
         * [Quiz End Page](#quiz-end-page)
     * [Features to Implement](#features-left-to-implement)
+        * [Languages Used](#languages-used)
+        * [Other Technology Used](#other-technology-used)
 * [Testing](#testing)
     * [Validation of Code](#validation-of-code)
     * [Site Testing](#site-testing)
@@ -60,7 +63,21 @@ The background colour does not distract from the main features of the quiz and t
 ### Type Face
 Throughout the site Roboto Slab has been used. It's an easy to read, neat font which doesn't distract from the overall appearance of the site.
 
-In case Roboto Slab isn't supported in the browser sans serif is available as a backup. As with Roboto this is an easy to read font which is widely accessible on browsers so should always be available making it an ideal backup font.    
+In case Roboto Slab isn't supported in the browser sans serif is available as a backup. As with Roboto this is an easy to read font which is widely accessible on browsers so should always be available making it an ideal backup font.
+
+[return to contents](<#contents>)
+
+## Technologies Used
+
+### Languages Used
+* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+### Other Technology Used
+* [Font awesome](https://fontawesome.com/) was used for icons held in the home buttons, and the trophy on the leaderboard page. 
+* [am i responsive](http://ami.responsivedesign.is/#) was used to assess the responsiveness of the site. 
+* [Shields.io](https://shields.io/) was used to create the shields used at the top of this readme.
 
 [return to contents](<#contents>)
 
