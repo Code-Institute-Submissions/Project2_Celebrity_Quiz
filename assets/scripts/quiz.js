@@ -1,4 +1,4 @@
-let globalQuestionClicks = 0 // global variable used in checkAnswer(event) function so question answers cannot be clicked more than once per round
+let globalQuestionClicks = 0; // global variable used in checkAnswer(event) function so question answers cannot be clicked more than once per round
 let globalQuestionsAnswered = 0; // global variable used in checkAnswer(event) function. Increased by 1 per question answered when it == 5 quiz ends
 let globalImageClicks = 0; // global variable used in clickCheck() function so if more than one section flipped reducePoints() is called
 let globalPreventClick1 = 0; //global variables used in flipImage() function to prevent image section 1 being clicked more than once
@@ -633,7 +633,7 @@ function checkAnswer(event) {
     let sad = new Audio('assets/mp3/sad.wav');
     let sound = document.getElementById("sound");
 
-    globalQuestionClicks += 1
+    globalQuestionClicks += 1;
 
     if (globalQuestionClicks === 1) {
     if (answer === correctAnswer) {

@@ -18,14 +18,14 @@ Please see the final project [here](https://cwallacebailey.github.io/Project2_Ce
     * [Colours](#colours)
     * [Type Face](#type-face)
 * [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Other Technology Used](#other-technology-used)
 * [Features](#features)
     * [Existing Features](#existing-features)
         * [Home Page](#home-page)
         * [Quiz Page](#quiz-page)
         * [Quiz End Page](#quiz-end-page)
     * [Features to Implement](#features-left-to-implement)
-        * [Languages Used](#languages-used)
-        * [Other Technology Used](#other-technology-used)
 * [Testing](#testing)
     * [Validation of Code](#validation-of-code)
     * [Site Testing](#site-testing)
@@ -40,7 +40,7 @@ Please see the final project [here](https://cwallacebailey.github.io/Project2_Ce
 
 # Goals and Target Audience
 
-The main aim of this quiz is to be fun and engaging, testing the knoweldge of the user in being able to recognise celebrities off small portions of their face. Celebrity quizes have proven to have a wide audience with the buzzfeed craze and constant updates on news sites about celebrities and their lives. People are facinated with them. This quiz is therefore designed to have a wide reach and be appealing to new users with 38 potential questions but also to repeat users as the array of questions and images is set up to be easily updated, changed or added to making new questions easy to place into the quiz and the removal of old questions just as simple. Once deployed the questions would be updated each week to keep the game fresh. 
+The main aim of this quiz is to be fun and engaging, testing the knowledge of the user in being able to recognise celebrities off small portions of their face. Celebrity quizes have proven to have a wide audience with the buzzfeed craze and constant updates on news sites about celebrities and their lives. People are fascinated with them. This quiz is therefore designed to have a wide reach and be appealing to new users with 38 potential questions but also to repeat users as the array of questions and images is set up to be easily updated, changed or added to making new questions easy to place into the quiz and the removal of old questions just as simple. Once deployed the questions would be updated each week to keep the game fresh. 
 
 Aside from attracting and engaging a wide audience the project goal is really to display the abilities Javascript allows you to offer to a site. This project utilises for loops, event listeners, push(), splice(), Math.random(), updating inner HTML, local storage and nested ifs / functions as well as many other items to create an engaging quiz. 
 
@@ -112,7 +112,7 @@ In case Roboto Slab isn't supported in the browser sans serif is available as a 
 
 * Instructions
     * The instructions button on the index page is easily visible and as a button the user should intuitively know to click the button to get access to the information
-    * Once clicked the instructions button disapears and a box with informative guide as to how the quiz works is revealed. This box can be clicked for the instructions button to reappear. This keeps the index page neat and simple. 
+    * Once clicked the instructions button disappears and a box with informative guide as to how the quiz works is revealed. This box can be clicked for the instructions button to reappear. This keeps the index page neat and simple. 
 
 ![instructions1](assets/readme_images/instructions1.png)  ![instructions2](assets/readme_images/instructions2.png)
 
@@ -146,7 +146,7 @@ The celebrity images are pulled out of an array at random so the user cannot pla
 ![quiz main section correct answer](assets/readme_images/quiz-section2.png)
 
 * Bottom section of the quiz page. This section contains two features:
-    * The first is the instuctions again if the user did not check on the first page or forgets how the game works. When clicked the text disapears and is replaced by a box with instructions in. If this box is clicked it disapears and is replaced with the original text.
+    * The first is the instuctions again if the user did not check on the first page or forgets how the game works. When clicked the text disappears and is replaced by a box with instructions in. If this box is clicked it disappears and is replaced with the original text.
     * The second feature allows the user to toggle sound effects on or off and adds value to the user if they want to listen to music or other sounds while playing the quiz without the quiz noises playing. 
 
 The below shows the section when neither feature has been clicked
@@ -159,7 +159,7 @@ The below shows the section when both features have been clicked
 
 #### Quiz End Page
 
-* Once the user has completed the quiz they are brought to the end of quiz page. Here the user is congratulated on finishing, their username is displayed along with their score and a comment under the score which is dependant on the score iteself. Over 100 it says "Wow, you really know your celebs", between 99 and 50 points it says "Not bad. You recognised someone..." ad under 50 it says "It's ok, celebs are not your thing". This adds value to the user with positive affirmation, using their name to make them feel welcome and then letting them know their score. 
+* Once the user has completed the quiz they are brought to the end of quiz page. Here the user is congratulated on finishing, their username is displayed along with their score and a comment under the score which is dependant on the score itself. Over 100 it says "Wow, you really know your celebs", between 99 and 50 points it says "Not bad. You recognised someone..." ad under 50 it says "It's ok, celebs are not your thing". This adds value to the user with positive affirmation, using their name to make them feel welcome and then letting them know their score. 
 
 ![final page](assets/readme_images/finalpage.png)
 
@@ -205,7 +205,7 @@ The exception is the quiz-end.html page which received two warnings for empty he
 
 ![celebrity quiz html warnings](assets/readme_images/html-warning.png)
 
-[JS Validator](https://jshint.com/) was used to ensure there were no syntax errors or missing semi colons in the Javascript code. There were no erroris in the code but there were 43 warnings which all related to "let", 'const', template literals and arrow function syntax only being available in ES6 or "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (randomNumber, pointsToWin, points)".
+[JS Validator](https://jshint.com/) was used to ensure there were no syntax errors or missing semi colons in the Javascript code. There were no error is in the code but there were 43 warnings which all related to "let", 'const', template literals and arrow function syntax only being available in ES6 or "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (randomNumber, pointsToWin, points)".
 
 The metrics read that: 
 
@@ -213,7 +213,7 @@ There are 20 functions in this file.
 
 Function with the largest signature take 2 arguments, while the median is 0.
 
-Largest function has 22 statements in it, while the median is 5.5.
+Largest function has 23 statements in it, while the median is 5.5.
 
 The most complex function has a cyclomatic complexity value of 9 while the median is 2.
 
@@ -231,11 +231,11 @@ The below references "all features are functional". This accounts for the follow
 
 ## index.html
 
-* Username field does not allow the user to access the quiz without entering a username over 2 characters with none of the characters being spaces. Once clicked with a username over 2 characters the user is taken to the quiz page (quiz-page.html) and the username is stored on local storage to be diplayed at the quiz-end page
+* Username field does not allow the user to access the quiz without entering a username over 2 characters with none of the characters being spaces. Once clicked with a username over 2 characters the user is taken to the quiz page (quiz-page.html) and the username is stored on local storage to be displayed at the quiz-end page
 
 * The highscores button takes you to the highscores page (highscores.html)
 
-* Instructions button can be clicked to reveal instructions on how to play the game and once clicked the instructions button disapears. If these instructions are themselves clicked they disapear and the instructions button re-appears.
+* Instructions button can be clicked to reveal instructions on how to play the game and once clicked the instructions button disapears. If these instructions are themselves clicked they disappear and the instructions button re-appears.
 
 ## Quiz Page
 
@@ -244,7 +244,7 @@ The below references "all features are functional". This accounts for the follow
 * The progress bar fills up with each successive answer selected and after 5 questions are answered the bar appears full. On starting the quiz the bar appears empty. The progress bar disapears entiely on screen sizes with a width below 550 pixels 
 * clicking each section of the "click to reveal" image reveals another section of the celebrity image to a maxmimum of four. The celebrity image is revealed in the correct order i.e. eyes do not appear below the nose or chin. 
 * Hovering over the answers causes them to increase in size and produce a shadow. When selected if the answer if correct it appears green, if incorrect it appears red. If the sound is enabled a correct answer gives applause, if incorrect a sad horn noise is played. 
-* "Click for Instructions" can be clicked to reveal instructions on how to play the game and once clicked the instructions button disapears. If these instructions are themselves clicked they disapear and the instructions button re-appears.
+* "Click for Instructions" can be clicked to reveal instructions on how to play the game and once clicked the instructions button disappears. If these instructions are themselves clicked they disappear and the instructions button re-appears.
 * On loading the image of a speaker shows that sound is muted and sound will not play regardless of the user getting a correct or incorrect answer. If clicked the image changes to a speaker producing sound and answers selected will produce one of two sounds mentioned above. 
 * Once five answers have been given the user is taken to the quiz end page (quiz-end.html)
 
@@ -357,7 +357,7 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
 
 * When the user selected an answer a timeout function is called before the new questions is loaded. It was possible for the user to use the window of time provided by the timeout function to click more than once on the correct answer to keep getting the points to win over and over again thus pushing their points way over the total possible. To prevent this the number of times the user has clicked on the answer is counted with the variable 'qclicks' which increases by one for each click. The answer is only checked and points won if the variable qclicks is equal to 1. Once the function loadQuestion() is run the qclicks is reset to 0.
 
-* The quiz answers are generated and an event listener applied to them so they can be clicked and the answer checked. The event listener used was originally inside the loadquestion() function which meant each time the function was called the event listener would increase in the number of times it was generated. So, clicking the first time would produce a single event, clicking the second time would generate two events and this continued and grew with each successive click. To fix this I had to use the tutoring service provided by code instiute and found from their advice that I needed to move the event listener to outside of the function it was in to prevent the loop issue. 
+* The quiz answers are generated and an event listener applied to them so they can be clicked and the answer checked. The event listener used was originally inside the loadquestion() function which meant each time the function was called the event listener would increase in the number of times it was generated. So, clicking the first time would produce a single event, clicking the second time would generate two events and this continued and grew with each successive click. To fix this I had to use the tutoring service provided by code institute and found from their advice that I needed to move the event listener to outside of the function it was in to prevent the loop issue. 
 
     [return to contents](<#contents>)
 
@@ -374,7 +374,7 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
 
 * When the user finishes the quiz they can view their highscore. If they have completed the quiz more than once they would see a list of their highscores up to a maximum of 5. There were multiple bugs in the development of this process: 
 
-    * When first deployed the system of creating the highscores board did not work on Chrome because the users score was being pushed into the array (highScores) on local storage as an integer and arrays one local storage only accepts strings. As a result the score has to be pushed as a string through the change below where "score" is the score of the users current round:  
+    * When first deployed the system of creating the highscores board did not work on Chrome because the users score was being pushed into the array (highScores) on local storage as an integer and arrays on local storage only accepts strings. As a result the score has to be pushed as a string through the change below where "score" is the score of the users current round:  
 
             highScores.push(score);
 
@@ -400,7 +400,7 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
 
 ## unsolved bugs
 
-* On one occassion when the image was clicked it did not flip but no error was given in the console and I repeatedly tested the site and never saw this again. As a result I have had to beleive this is a one off random occurrence as I cannot make it happen again. 
+* On one occassion when the image was clicked it did not flip but no error was given in the console and I repeatedly tested the site and never saw this again. As a result I have had to believe this is a one off random occurrence as I cannot make it happen again. 
        
 # Deployment
 
