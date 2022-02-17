@@ -768,7 +768,7 @@ function createHighScores() {
 
 function playAgain() {
     let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-    if (highScores.length < 1) {
+    if (highScores.length < 1 || 'undefined') {
         document.getElementById("playAgain").setAttribute("style", "display: none");
     } else {
         document.getElementById("hide").setAttribute("style", "display: block");
