@@ -209,11 +209,11 @@ The exception is the quiz-end.html page which received two warnings for empty he
 
 The metrics read that: 
 
-There are 20 functions in this file.
+There are 21 functions in this file.
 
 Function with the largest signature take 2 arguments, while the median is 0.
 
-Largest function has 23 statements in it, while the median is 5.5.
+Largest function has 23 statements in it, while the median is 5.
 
 The most complex function has a cyclomatic complexity value of 9 while the median is 2.
 
