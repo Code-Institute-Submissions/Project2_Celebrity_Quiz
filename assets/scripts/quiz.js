@@ -5,6 +5,8 @@ let globalPreventClick1 = 0; //global variables used in flipImage() function to 
 let globalPreventClick2 = 0; //global variables used in flipImage() function to prevent image section 2 being clicked more than once
 let globalPreventClick3 = 0; //global variables used in flipImage() function to prevent image section 3 being clicked more than once
 let globalPreventClick4 = 0; //global variables used in flipImage() function to prevent image section 4 being clicked more than once
+// additional global variable in LoadQuestion() called 'randomNumber'
+
 
 // focus on enter username box on opening index.html
 
@@ -60,7 +62,7 @@ function sound() {
     }
 }
 
-// create array
+// create array. 
 
 const array = [
     {
