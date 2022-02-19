@@ -30,7 +30,13 @@ function instructionsGone() {
     instructions.setAttribute("style", "display: block");
 }
 
-// save username
+// Asks the user to confirm they want to navigate away from the page. 
+
+function smallHomeLinkClicked() {
+    return confirm('Are you sure you want to go home?')
+}
+
+// saves username and holds it on local storage if over two characters. Allows numbers but not excessive spaces. 
 
 function saveUsername() {
     let username = document.getElementById("username").value;
