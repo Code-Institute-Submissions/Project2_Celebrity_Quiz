@@ -454,6 +454,8 @@ To clone the repository in order to be able to make changes to the project witho
 
 * I had not worked with flexbox before but wanted to employ it for this project in order to become familiar with it. Although available as part of the code institute course I used the site (link [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)) to learn how it worked and could be utilised for this project. 
 
+* The methodology for hovering over buttons to make them increase in size and add a shadow was taken from [here](https://codepen.io/ovdojoey/pen/BomKyZ)
+
 [return to contents](<#contents>)
 
 ### Other
