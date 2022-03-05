@@ -26,12 +26,24 @@ function AddEventListenerIndexPage() {
     document.getElementById("saveUsername").addEventListener("click", function() {
         saveUsername()
     })
-
 }
 
 // adds event listener to 'home' button on quiz-page.html
 
 function AddEventListenerQuizPage() {
+
+    document.getElementById("instructions").addEventListener("click", function() {
+        instructions()
+    })
+
+    document.getElementById("instructionsBox").addEventListener("click", function() {
+        instructionsGone()
+    })
+
+    document.getElementById("sound").addEventListener("click", function() {
+        sound()
+    })
+
     document.getElementById("smallHomeLinkClicked").addEventListener("click", function() {
         smallHomeLinkClicked()
     })
