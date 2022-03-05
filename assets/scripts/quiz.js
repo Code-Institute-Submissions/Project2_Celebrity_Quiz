@@ -11,16 +11,9 @@ let globalPreventClick4 = 0; //global variables used in flipImage() function to 
 
 import { array } from './array.js';
 
-// if the page is index.html then loads functions and adds event listeners
-
-if (document.body.classList.contains('index')) {
-    focus();
-    AddEventListerIndexPage()
-};
-
 // Adds event Listeners to Index.html Page Elements
 
-function AddEventListerIndexPage() { 
+function AddEventListenerIndexPage() { 
 
     document.getElementById("instructions").addEventListener("click", function() {
         instructions()
@@ -34,6 +27,14 @@ function AddEventListerIndexPage() {
         saveUsername()
     })
 
+}
+
+// adds event listener to 'home' button on quiz-page.html
+
+function AddEventListenerQuizPage() {
+    document.getElementById("smallHomeLinkClicked").addEventListener("click", function() {
+        smallHomeLinkClicked()
+    })
 }
 
 // focus on enter username box on opening index.html
@@ -324,4 +325,14 @@ function playAgain() {
     } else {
         document.getElementById("hide").setAttribute("style", "display: block");
     }
+}
+
+// if the page is index.html then loads functions and adds event listeners
+
+if (document.body.classList.contains('index')) {
+    focus();
+    AddEventListenerIndexPage();
+} else if (document.body.classList.contains('quizPage')) {
+    beginGame()
+    AddEventListenerQuizPage();
 }
