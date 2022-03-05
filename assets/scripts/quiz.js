@@ -18,11 +18,9 @@ function AddEventListenerIndexPage() {
     document.getElementById("instructions").addEventListener("click", function() {
         instructions()
     })
-
     document.getElementById("instructionsBox").addEventListener("click", function() {
         instructionsGone()
     })
-
     document.getElementById("saveUsername").addEventListener("click", function() {
         saveUsername()
     })
@@ -35,15 +33,12 @@ function AddEventListenerQuizPage() {
     document.getElementById("instructions").addEventListener("click", function() {
         instructions()
     })
-
     document.getElementById("instructionsBox").addEventListener("click", function() {
         instructionsGone()
     })
-
     document.getElementById("sound").addEventListener("click", function() {
         sound()
     })
-
     document.getElementById("smallHomeLinkClicked").addEventListener("click", function() {
         smallHomeLinkClicked()
     })
