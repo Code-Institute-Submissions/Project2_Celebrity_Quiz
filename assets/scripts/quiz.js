@@ -28,7 +28,7 @@ function AddEventListenerIndexPage() {
     })
 }
 
-// adds event listener to 'home' button on quiz-page.html
+// adds event listener to on quiz-page.html
 
 function AddEventListenerQuizPage() {
 
@@ -47,6 +47,16 @@ function AddEventListenerQuizPage() {
     document.getElementById("smallHomeLinkClicked").addEventListener("click", function() {
         smallHomeLinkClicked()
     })
+}
+
+// adds event listener to on quiz-page.html
+
+function AddEventListenerHighscoresPage() {
+
+    document.getElementById("hide").addEventListener("click", function() {
+        createHighScores()
+    })
+
 }
 
 // focus on enter username box on opening index.html
@@ -89,7 +99,10 @@ function saveUsername() {
 // Asks the user to confirm they want to navigate away from the page. 
 
 function smallHomeLinkClicked() {
-    return confirm('Are you sure you want to go home?')
+    let leavePage = confirm('Are you sure you want to go home?')
+    if (leavePage) {
+        window.location = 'index.html'
+    }
 }
 
 // allow sound to be played or muted by clicking button
@@ -345,6 +358,13 @@ if (document.body.classList.contains('index')) {
     focus();
     AddEventListenerIndexPage();
 } else if (document.body.classList.contains('quizPage')) {
-    beginGame()
+    beginGame();
     AddEventListenerQuizPage();
-}
+} else if (document.body.classList.contains('quizEnd')) {
+    setScore();
+} else if (document.body.classList.contains('highscores')) {
+    playAgain();
+    AddEventListenerHighscoresPage();
+} else {
+    //do nothing
+};
