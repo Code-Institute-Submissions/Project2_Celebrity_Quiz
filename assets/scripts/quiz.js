@@ -30,6 +30,10 @@ function AddEventListerIndexPage() {
         instructionsGone()
     })
 
+    document.getElementById("saveUsername").addEventListener("click", function() {
+        saveUsername()
+    })
+
 }
 
 // focus on enter username box on opening index.html
@@ -56,23 +60,23 @@ function instructionsGone() {
     instructions.setAttribute("style", "display: block");
 }
 
-// Asks the user to confirm they want to navigate away from the page. 
-
-function smallHomeLinkClicked() {
-    return confirm('Are you sure you want to go home?')
-}
-
 // saves username and holds it on local storage if over two characters. Allows numbers but not excessive spaces. 
 
 function saveUsername() {
     let username = document.getElementById("username").value;
-    usernameCheck = username.replace(/ /g, ''); // removes all spaces
+    let usernameCheck = username.replace(/ /g, ''); // removes all spaces
     if (usernameCheck.length <= 2) {
         alert("Please enter a username over 2 characters");
     } else {
     localStorage.setItem('username', username);
     window.location.href = "quiz-page.html";    
     }
+}
+
+// Asks the user to confirm they want to navigate away from the page. 
+
+function smallHomeLinkClicked() {
+    return confirm('Are you sure you want to go home?')
 }
 
 // allow sound to be played or muted by clicking button
