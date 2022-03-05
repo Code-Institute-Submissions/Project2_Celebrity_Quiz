@@ -49,16 +49,6 @@ function AddEventListenerQuizPage() {
     })
 }
 
-// adds event listener to on quiz-page.html
-
-function AddEventListenerHighscoresPage() {
-
-    document.getElementById("hide").addEventListener("click", function() {
-        createHighScores()
-    })
-
-}
-
 // focus on enter username box on opening index.html
 
 function focus() {
@@ -338,17 +328,17 @@ function createHighScores() {
 
         document.getElementById("highscores-list").innerHTML = li;
     }
-    document.getElementById("hide").setAttribute("style", "display: none");
 }
 
 // prevents the "play again" button from showing if the game hasn't yet been played
 
 function playAgain() {
     let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-    if (highScores.length < 1 || 'undefined') {
+    if (highScores.length < 1) {
+        console.log(highScores.length)
         document.getElementById("playAgain").setAttribute("style", "display: none");
     } else {
-        document.getElementById("hide").setAttribute("style", "display: block");
+        document.getElementById("playAgain").setAttribute("style", "display: block");
     }
 }
 
@@ -364,7 +354,7 @@ if (document.body.classList.contains('index')) {
     setScore();
 } else if (document.body.classList.contains('highscores')) {
     playAgain();
-    AddEventListenerHighscoresPage();
+    createHighScores()
 } else {
     //do nothing
 };
