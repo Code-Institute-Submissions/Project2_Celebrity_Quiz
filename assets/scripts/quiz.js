@@ -197,32 +197,32 @@ function checkAnswer(event) {
 
     globalQuestionClicks += 1;
 
-    if (globalQuestionClicks === 1) {
-    if (answer === correctAnswer) {
+    if (globalQuestionClicks === 1) { // only allows one answer at a time. Stops the user clicking repeatedly once answered the question
+    if (answer === correctAnswer) { 
         selection.style.backgroundColor = "green";
-        if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
+        if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') { // Plays sound if answer correct if sound is on
             cheer.play();
             }
         scoreUpdate();
-        globalImageClicks = 0;
+        globalImageClicks = 0; // if this is over 1 then points to win starts being reduced. This resets it for the next question
     } else {
         selection.style.backgroundColor = "red";
-        if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') {
+        if (sound.innerHTML === '<i class="fas fa-volume-up"></i>') { // Plays sound if answer incorrect if sound is on
             sad.play();
             }
-        points.innerText = 20;
-        globalImageClicks = 0;
+        points.innerText = 20; // resets points to win to 20
+        globalImageClicks = 0; // if this is over 1 then points to win starts being reduced. This resets it for the next question
         }
     setTimeout(function() {
         let score = parseInt(document.getElementById("score").innerText);
         selection.style.backgroundColor = "#0c1a25";
-        array.splice(randomNumber,1);
-        globalQuestionsAnswered += 1;
-        progressBar.style.width = `${((globalQuestionsAnswered)/5)*100}%`;
+        array.splice(randomNumber,1); // stops the same image coming up more than once in a round
+        globalQuestionsAnswered += 1; // once this reaches 5 the quiz ends
+        progressBar.style.width = `${((globalQuestionsAnswered)/5)*100}%`; // increases the width of the progress bar
 
-        if (globalQuestionsAnswered === 5) {
-            localStorage.setItem('score', score);
-            window.location.href = "quiz-end.html";
+        if (globalQuestionsAnswered === 5) { 
+            localStorage.setItem('score', score); // puts the users score onto local storage once the quiz has finished
+            window.location.href = "quiz-end.html"; // takes you to the end of the quiz
         } else { 
             LoadQuestion();
         }
@@ -337,7 +337,7 @@ function playAgain() {
     }
 }
 
-// if the page is index.html then loads functions and adds event listeners
+// checks the page and loads the required functions and event listeners.
 
 if (document.body.classList.contains('index')) {
     focus();
