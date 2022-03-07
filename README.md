@@ -261,7 +261,7 @@ The below references "all features are functional". This accounts for the follow
 
 * The home button takes you to the home page (index.html)
 * Highscores can be viewed at anypoint but if the user has not played through the quiz at least once the "play again" button is not visible. 
-* Once clicked the "click to see" button on the highscores page disapears and if the user has played through the quiz at least once a scoreboard is produced. If the user has played through more than once the scores are in order of largest to smallest with largest being at the top. A maximum of 5 top scores can be shown. 
+* Upon accessing the page If the user has played through the quiz at least once a scoreboard is produced. If the user has played through more than once the scores are in order of largest to smallest with largest being at the top. A maximum of 5 top scores can be shown. 
 
 [return to contents](<#contents>)
 
@@ -327,7 +327,7 @@ Best practices could be improved for both by switching 7 items from HTTP/1.1 to 
     <br>
     "username.replace(/ /g, '')"
 
-    * When the quiz has been completed the users score is added to local storage. Upon clicking "click to see" button on the highscores page the function highScores is run which adds the score to the highscores array and creates an ordered list. It was found that if the user visited the home page and then went back to the highscores list the score would be added twice. If they went back to the homepage again and then returned to the highscores page again the score would be added a third time. Essentially the score was being re-added each time the highScores function was called and it was called every time the "click to see" button was used. To remove this issue the score is only added if over 0 and once the function highScore is called the local storage was cleared using the code below: 
+    * When the quiz has been completed the users score is added to local storage. Upon accessing the highscores page the function highScores is run which adds the score to the highscores array and creates an ordered list. It was found that if the user visited the home page and then went back to the highscores list the score would be added twice. If they went back to the homepage again and then returned to the highscores page again the score would be added a third time. Essentially the score was being re-added each time the highScores function was called, To remove this issue the score is only added if over 0 and once the function highScore is called the local storage was cleared using the code below: 
     <br>
     <br>
     localStorage.clear()
