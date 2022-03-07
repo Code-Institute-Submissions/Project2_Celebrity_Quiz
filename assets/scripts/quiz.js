@@ -16,14 +16,14 @@ import { array } from './array.js';
 function AddEventListenerIndexPage() { 
 
     document.getElementById("instructions").addEventListener("click", function() {
-        instructions()
-    })
+        instructions();
+    });
     document.getElementById("instructionsBox").addEventListener("click", function() {
-        instructionsGone()
-    })
+        instructionsGone();
+    });
     document.getElementById("saveUsername").addEventListener("click", function() {
-        saveUsername()
-    })
+        saveUsername();
+    });
 }
 
 // adds event listener to on quiz-page.html
@@ -31,24 +31,24 @@ function AddEventListenerIndexPage() {
 function AddEventListenerQuizPage() {
 
     document.getElementById("instructions").addEventListener("click", function() {
-        instructions()
-    })
+        instructions();
+    });
     document.getElementById("instructionsBox").addEventListener("click", function() {
-        instructionsGone()
-    })
+        instructionsGone();
+    });
     document.getElementById("sound").addEventListener("click", function() {
-        sound()
-    })
+        sound();
+    });
     document.getElementById("smallHomeLinkClicked").addEventListener("click", function() {
-        smallHomeLinkClicked()
-    })
+        smallHomeLinkClicked();
+    });
 }
 
 // focus on enter username box on opening index.html
 
 function focus() {
         document.getElementById("username").focus();
-    };
+    }
 
 // Opens instruction box on being clicked
 
@@ -84,9 +84,9 @@ function saveUsername() {
 // Asks the user to confirm they want to navigate away from the page. 
 
 function smallHomeLinkClicked() {
-    let leavePage = confirm('Are you sure you want to go home?')
+    let leavePage = confirm('Are you sure you want to go home?');
     if (leavePage) {
-        window.location = 'index.html'
+        window.location = 'index.html';
     }
 }
 
@@ -330,7 +330,7 @@ function createHighScores() {
 function playAgain() {
     let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
     if (highScores.length < 1) {
-        console.log(highScores.length)
+        console.log(highScores.length);
         document.getElementById("playAgain").setAttribute("style", "display: none");
     } else {
         document.getElementById("playAgain").setAttribute("style", "display: block");
@@ -349,7 +349,7 @@ if (document.body.classList.contains('index')) {
     setScore();
 } else if (document.body.classList.contains('highscores')) {
     playAgain();
-    createHighScores()
+    createHighScores();
 } else {
     //do nothing
-};
+}

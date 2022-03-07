@@ -206,15 +206,17 @@ The exception is the quiz-end.html page which received two warnings for empty he
 
 [JS Validator](https://jshint.com/) was used to ensure there were no syntax errors or missing semi colons in the Javascript code. There were no error is in the code but there were 43 warnings which all related to "let", 'const', template literals and arrow function syntax only being available in ES6 or "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (randomNumber, pointsToWin, points)".
 
-The metrics read that: 
+The metrics read that, for the script quiz.js: 
 
-There are 21 functions in this file.
+There are 30 functions in this file.
 
 Function with the largest signature take 2 arguments, while the median is 0.
 
-Largest function has 23 statements in it, while the median is 5.
+Largest function has 23 statements in it, while the median is 4.
 
-The most complex function has a cyclomatic complexity value of 9 while the median is 2.
+The most complex function has a cyclomatic complexity value of 9 while the median is 1.
+
+The metrics read that, for the script array.js said nothing as it is only an array. 
 
 [return to contents](<#contents>)
 
@@ -579,3 +581,7 @@ https://creativecommons.org/licenses/by-sa/3.0/
 I would like to take this time to thank my Mentor, Precious Liege for his help throughout this project. 
 
 [return to contents](<#contents>)
+
+## Other Notes
+
+The git commits at the start of this project are simple as my feedback from my first project was that they were too long and I was marked down for it, getting a pass instead of a merit. My project 1 was then remarked to a merit and a note against the git commits that they should be shorter but were nicely descriptive. Unfortunately this left it too late to change my commit messages for this project, which may seem a little simple at the start. 
