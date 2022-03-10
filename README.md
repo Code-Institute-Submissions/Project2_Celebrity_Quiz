@@ -144,9 +144,10 @@ The celebrity images are pulled out of an array at random so the user cannot pla
 
 ![quiz main section correct answer](assets/readme_images/quiz-section2.png)
 
-* Bottom section of the quiz page. This section contains two features:
+* Bottom section of the quiz page. This section contains three features:
     * The first is the instuctions again if the user did not check on the first page or forgets how the game works. When clicked the text disappears and is replaced by a box with instructions in. If this box is clicked it disappears and is replaced with the original text.
     * The second feature allows the user to toggle sound effects on or off and adds value to the user if they want to listen to music or other sounds while playing the quiz without the quiz noises playing. 
+    * The third feature is the small home button which allows the user to return to the main home page at any point. When clicked an alert appears asking if the user is sure they want to be navigated away from the quiz-page. If ok is selected they return to the home page, if cancel then the user remains on the quiz page which prevents accidental clicks spoiling the users score. 
 
 The below shows the section when neither feature has been clicked
 ![bottom section of quiz page 1](assets/readme_images/quiz-bottom1.png)
@@ -154,11 +155,17 @@ The below shows the section when neither feature has been clicked
 The below shows the section when both features have been clicked
 ![bottom section of quiz page 2](assets/readme_images/quiz-bottom2.png)
 
+The below shows the small home button. 
+![bottom section of quiz page 3](assets/readme_images/small_home_button.png)
+
+The below shows the small home button. 
+![The small home button once clicked](assets/readme_images/small_home_clicked.png)
+
 [return to contents](<#contents>)
 
 #### Quiz End Page
 
-* Once the user has completed the quiz they are brought to the end of quiz page. Here the user is congratulated on finishing, their username is displayed along with their score and a comment under the score which is dependant on the score itself. Over 100 it says "Wow, you really know your celebs", between 99 and 50 points it says "Not bad. You recognised someone..." ad under 50 it says "It's ok, celebs are not your thing". This adds value to the user with positive affirmation, using their name to make them feel welcome and then letting them know their score. 
+* Once the user has completed the quiz they are brought to the end of quiz page. Here the user is congratulated on finishing, their username is displayed along with their score and a comment under the score which is dependant on the score itself. Over 80 it says "Wow, you really know your celebs", between 79 and 30 points it says "Not bad. You recognised someone..." ad under 30 it says "It's ok, celebs are not your thing". This adds value to the user with positive affirmation, using their name to make them feel welcome and then letting them know their score. 
 
 ![final page](assets/readme_images/finalpage.png)
 
