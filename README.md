@@ -158,7 +158,7 @@ The below shows the section when both features have been clicked
 The below shows the small home button. 
 ![bottom section of quiz page 3](assets/readme_images/small_home_button.png)
 
-The below shows the small home button. 
+The below shows the result of clicking the small home button. 
 ![The small home button once clicked](assets/readme_images/small_home_clicked.png)
 
 [return to contents](<#contents>)
